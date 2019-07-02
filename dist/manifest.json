@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Login helper",
+  "version": "1.0",
+  "description": "Simple tool to automagically log into something",
+  "icons": {
+    "16": "images/key_16.png",
+    "32": "images/key_32.png",
+    "64": "images/key_64.png",
+    "128": "images/key_128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://something.com/*"],
+      "run_at": "document_idle",
+      "js": ["js/login.js"]
+    }
+  ],
+  "permissions": ["activeTab", "*://something.com/*"]
+}

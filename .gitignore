@@ -4,9 +4,6 @@
 # dependencies
 /node_modules
 
-# Distribution
-/dist
-
 # misc
 .env.local
 .env.development.local
